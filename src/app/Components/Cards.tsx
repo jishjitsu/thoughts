@@ -39,7 +39,7 @@ export default function Cards() {
   return (
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
         {posts.map((post) => (
-          <div key={post.slug} className="p-4 bg-white shadow rounded-lg">
+          <div key={post.slug} className="p-6 bg-gray-900 shadow-lg rounded-xl border border-gray-700">
             <h2 className="text-xl font-semibold">{post.title}</h2>
             <p className="text-gray-700">{post.excerpt}</p>
             <Link href={`/posts/${post.slug}`}>
