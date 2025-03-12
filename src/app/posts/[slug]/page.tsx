@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import { ThemeToggle } from '@/app/Components/ThemeToggle';
 
 const posts = [
   {
@@ -48,6 +49,7 @@ export default function PostPage({ params }: PostPageProps) {
 
   return (
     <div className="max-w-3xl mx-auto p-6">
+      <ThemeToggle/>
       <h1 className="text-3xl font-bold mb-4">{post.title}</h1>
       <p>{post.content}</p>
     </div>
